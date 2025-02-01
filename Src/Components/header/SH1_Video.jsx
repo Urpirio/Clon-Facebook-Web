@@ -1,6 +1,7 @@
 import SH from "./data/SHData";
 
-const SH1 = () =>{
+
+const SH1_Video = () =>{
 
     const Search = (props) =>{
         return(
@@ -20,36 +21,36 @@ const SH1 = () =>{
 
     const Search_f = () =>{
         
-        document.getElementById("SH1__Section1").style.marginTop = "7.7cm";
-        document.getElementById("SH1__Section1").style.boxShadow = "1px 1px 5px 5px #80808043";
-        document.querySelector(".SH1__Section1_div2").style.display = "flex"
-        document.getElementById("logoFacebook").style.display = "none";
-        document.getElementById("btn_return").style.display = "flex";
+        document.getElementById("SH1__Section1V").style.marginTop = "7.7cm";
+        document.getElementById("SH1__Section1V").style.boxShadow = "1px 1px 5px 5px #80808043";
+        document.querySelector(".SH1__Section1_div2V").style.display = "flex"
+        document.getElementById("logoFacebookV").style.display = "none";
+        document.getElementById("btn_returnV").style.display = "flex";
         
     };
     
     const Search_Back = () => {
-        document.getElementById("SH1__Section1").style.marginTop = "0";
-        document.querySelector(".SH1__Section1_div2").style.display = "none"
-        document.getElementById("logoFacebook").style.display = "flex";
-        document.getElementById("btn_return").style.display = "none";
-        document.getElementById("SH1__Section1").style.boxShadow = "none";
+        document.getElementById("SH1__Section1V").style.marginTop = "0";
+        document.querySelector(".SH1__Section1_div2V").style.display = "none"
+        document.getElementById("logoFacebookV").style.display = "flex";
+        document.getElementById("btn_returnV").style.display = "none";
+        document.getElementById("SH1__Section1V").style.boxShadow = "none";
     };
 
     const VideoPage = () =>{
     };
 
     return(
-        <section className="SH1">
-            <div className="Container_back">
+        <section className="SH1V">
+            <div className="Container_backV">
 
             </div>
-            <section className="SH1__Section1" id="SH1__Section1" >
+            <section className="SH1__Section1V" id="SH1__Section1V" >
 
-                <div className="SH1__Section1_div1">
+                <div className="SH1__Section1_div1V">
                     <div className="div1">
-                    <i class='bx bxl-facebook-circle' id="logoFacebook" ></i>
-                    <button onClick={Search_Back} id="btn_return"><i class='bx bx-right-arrow-alt bx-rotate-180' ></i></button>
+                    <i class='bx bxl-facebook-circle' id="logoFacebookV" ></i>
+                    <button onClick={Search_Back} id="btn_returnV"><i class='bx bx-right-arrow-alt bx-rotate-180' ></i></button>
                     </div>
 
                     <div className="div2">
@@ -58,7 +59,7 @@ const SH1 = () =>{
 
                 </div>
 
-                <div className="SH1__Section1_div2" id="SH1__Section1_div2">
+                <div className="SH1__Section1_div2V" id="SH1__Section1_div2">
                     <div className="div1">
                         <h4>Reciente</h4>
                         <a href="">Editar</a>
@@ -68,9 +69,9 @@ const SH1 = () =>{
                     </div>
                 </div>
             </section>
-            <section className="SH1__Section2" >
+            <section className="SH1__Section2V" >
                 <nav>
-                    <a className="link" href=""><i class='bx bxs-home' ></i></a>
+                    <a className="link" href="/"><i class='bx bxs-home' ></i></a>
                     <a onClick={VideoPage} className="link2" href="/Video"><i class='bx bx-desktop'></i></a>
                     <a className="link3" href=""><i class='bx bx-store-alt' ></i></a>
                     <a className="link4" href=""><i class="bi bi-people-fill"></i></a>
@@ -78,7 +79,7 @@ const SH1 = () =>{
                 </nav>
 
             </section>
-            <section className="SH1__Section3" >
+            <section className="SH1__Section3V" >
                 <div className="SH1__Section3_div1">
                 <div className="div1">
                     <button><i class="bi bi-list"></i></button>
@@ -100,4 +101,4 @@ const SH1 = () =>{
         </section>
     )
 };
-export default SH1;
+export default SH1_Video;
